@@ -1,1 +1,0 @@
-const productsData=[{name:'Red Sneakers',price:12000}];

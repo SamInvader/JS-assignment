@@ -1,0 +1,28 @@
+body{font-family:Arial,Helvetica,sans-serif;margin:16px;background:#f7f7f8;color:#222}
+h1{font-size:22px;margin:8px 0 14px}
+h2{font-size:18px;margin:10px 0}
+section,main,form{background:#fff;border:1px solid #e0e0e0;padding:14px;margin-bottom:16px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.col{flex:1;min-width:260px}
+button{cursor:pointer;padding:6px 10px;border-radius:4px;border:1px solid #bbb;background:#fff}
+input,select{padding:6px;border:1px solid #ccc;border-radius:4px}
+.list{margin-top:8px}
+.book-item{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px dashed #eee}
+.cart{border-top:1px solid #eee;padding-top:8px;margin-top:8px}
+.product{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed #eee}
+.cart-item{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed #f0f0f0}
+.total{font-weight:700;margin-top:8px}
+.quiz-options{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.opt{padding:10px;border-radius:6px;border:1px solid #ccc;background:#fafafa;cursor:pointer}
+.opt.disabled{pointer-events:none;opacity:.7}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th,.table td{border:1px solid #e5e5e5;padding:8px;text-align:left}
+.valid{color:green;margin-left:8px}
+.invalid{color:red;margin-left:8px}
+.field{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.status-pass{color:green;font-weight:700}
+.status-fail{color:#c0392b;font-weight:700}
+.grade-remark{margin-top:8px;font-weight:700}
+.small{font-size:13px;color:#555}
+nav a{margin-right:10px;color:#0366d6;text-decoration:none}
+nav a:hover{text-decoration:underline}

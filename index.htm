@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM & JavaScript Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+        h1 {
+            margin-bottom: 16px;
+            color: #111827;
+        }
+        section {
+            margin-bottom: 24px;
+            padding: 18px;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        .form-row,
+        .product,
+        .cart-item,
+        .quiz-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .form-row {
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+        input,
+        button,
+        select {
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            cursor: pointer;
+            background: #2563eb;
+            color: white;
+            border: none;
+            transition: background 0.2s ease;
+        }
+        button:hover {
+            background: #1d4ed8;
+        }
+        button.secondary {
+            background: #6b7280;
+        }
+        button.danger {
+            background: #dc2626;
+        }
+        .product,
+        .cart-item {
+            justify-content: space-between;
+            padding: 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            background: #f9fafb;
+            margin-bottom: 10px;
+        }
+        .quiz-option {
+            width: 100%;
+            justify-content: space-between;
+            cursor: pointer;
+            border: 1px solid #d1d5db;
+            background: #ffffff;
+            padding: 14px;
+            border-radius: 10px;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+        .quiz-option:hover {
+            border-color: #93c5fd;
+        }
+        .quiz-option.correct {
+            background: #d1fae5;
+            border-color: #10b981;
+            color: #065f46;
+        }
+        .quiz-option.wrong {
+            background: #fee2e2;
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+        .feedback {
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+        .feedback.valid {
+            color: #15803d;
+        }
+        .feedback.invalid {
+            color: #b91c1c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        th,
+        td {
+            border: 1px solid #d1d5db;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f8fafc;
+        }
+        .status-pass {
+            color: #0f766e;
+            font-weight: 600;
+        }
+        .status-fail {
+            color: #b91c1c;
+            font-weight: 600;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM & JavaScript Assignment</h1>
+    <section id="librarySection">
+        <h2>1. Library Management System</h2>
+        <div class="form-row">
+            <input id="bookTitle" placeholder="Book title" />
+            <input id="bookAuthor" placeholder="Author" />
+            <input id="bookYear" type="number" placeholder="Year" min="1000" max="2100" />
+            <button id="addBookButton">Add Book</button>
+        </div>
+        <p id="libraryMessage"></p>
+        <div id="libraryAllBooks"></div>
+        <div id="libraryAvailableBooks"></div>
+    </section>
+    <section id="cartSection">
+        <h2>2. Shopping Cart</h2>
+        <div id="productList"></div>
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+        <p><strong>Total:</strong> ₦<span id="cartTotal">0.00</span></p>
+    </section>
+    <section id="quizSection">
+        <h2>3. Interactive Quiz</h2>
+        <div id="quizContainer"></div>
+    </section>
+    <section id="jsonSection">
+        <h2>4. Student Results Table</h2>
+        <div id="studentTableContainer"></div>
+    </section>
+    <section id="validationSection">
+        <h2>5. Registration Validator</h2>
+        <form id="registrationForm">
+            <div class="form-row">
+                <input id="username" placeholder="Username" />
+            </div>
+            <div id="usernameFeedback" class="feedback"></div>
+            <div class="form-row">
+                <input id="password" type="password" placeholder="Password" />
+            </div>
+            <div id="passwordFeedback" class="feedback"></div>
+            <div class="form-row">
+                <input id="phone" placeholder="Phone +234XXXXXXXXXX" />
+            </div>
+            <div id="phoneFeedback" class="feedback"></div>
+            <button type="submit">Submit Registration</button>
+        </form>
+        <p id="registrationResult"></p>
+    </section>
+    <script src="assignment.js"></script>
+</body>
+</html>

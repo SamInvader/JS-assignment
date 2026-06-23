@@ -1,1 +1,0 @@
-const quizQuestions=[{q:'What is the capital of Nigeria?',opts:['Lagos','Abuja'],a:1}];
